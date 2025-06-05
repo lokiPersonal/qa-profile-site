@@ -6,7 +6,7 @@ export default function QAProfileWebsite() {
     <div className="min-h-screen bg-gradient-to-tr from-purple-200 via-pink-200 to-yellow-200 p-8 font-sans text-gray-900">
       <header className="max-w-4xl mx-auto text-center mb-16">
         <h1 className="text-5xl font-extrabold mb-4 tracking-wide drop-shadow-md">
-          Loki S
+          Lokesh Sadagopan
         </h1>
         <p className="text-xl text-gray-700 italic">
           QA Lead | Automation Expert | Building Teams
