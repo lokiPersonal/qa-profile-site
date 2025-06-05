@@ -3,29 +3,35 @@ import { Briefcase, Youtube, Code, Rocket } from "lucide-react";
 
 export default function QAProfileWebsite() {
   return (
-    <div className="min-h-screen bg-gray-100 p-6 font-sans">
-      <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-gray-800">Loki S</h1>
-        <p className="text-xl text-gray-600">QA Lead | Automation Expert | Horror Storyteller</p>
+    <div className="min-h-screen bg-gradient-to-tr from-purple-200 via-pink-200 to-yellow-200 p-8 font-sans text-gray-900">
+      <header className="max-w-4xl mx-auto text-center mb-16">
+        <h1 className="text-5xl font-extrabold mb-4 tracking-wide drop-shadow-md">
+          Loki S
+        </h1>
+        <p className="text-xl text-gray-700 italic">
+          QA Lead | Automation Expert | Building Teams
+        </p>
       </header>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-white shadow rounded-2xl p-6">
-          <div className="flex items-center gap-4 mb-4">
-            <Briefcase className="text-blue-500" />
-            <h2 className="text-2xl font-semibold">Professional Summary</h2>
+      <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* Professional Summary */}
+        <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+          <div className="flex items-center gap-3 mb-6">
+            <Briefcase className="text-indigo-600 w-8 h-8" />
+            <h2 className="text-3xl font-semibold text-indigo-700">Professional Summary</h2>
           </div>
-          <p>
+          <p className="text-gray-700 leading-relaxed text-lg">
             With close to 9 years of experience, I currently serve as a QA Lead. I have worked extensively with Java (Selenium) for frontend automation and Python (Pytest) for API automation. I’m also familiar with Cucumber and have a strong grasp of test strategy, automation frameworks, and CI/CD tools like Jenkins.
           </p>
         </div>
 
-        <div className="bg-white shadow rounded-2xl p-6">
-          <div className="flex items-center gap-4 mb-4">
-            <Code className="text-green-500" />
-            <h2 className="text-2xl font-semibold">Tech Stack</h2>
+        {/* Tech Stack */}
+        <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+          <div className="flex items-center gap-3 mb-6">
+            <Code className="text-green-600 w-8 h-8" />
+            <h2 className="text-3xl font-semibold text-green-700">Tech Stack</h2>
           </div>
-          <ul className="list-disc pl-6">
+          <ul className="list-disc list-inside text-gray-700 text-lg space-y-2">
             <li>Java with Selenium (Frontend Automation)</li>
             <li>Python with Pytest (API Automation)</li>
             <li>Cucumber for BDD</li>
@@ -35,36 +41,40 @@ export default function QAProfileWebsite() {
           </ul>
         </div>
 
-        <div className="bg-white shadow rounded-2xl p-6">
-          <div className="flex items-center gap-4 mb-4">
-            <Rocket className="text-red-500" />
-            <h2 className="text-2xl font-semibold">Leadership & Impact</h2>
+        {/* Leadership & Impact */}
+        <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+          <div className="flex items-center gap-3 mb-6">
+            <Rocket className="text-red-600 w-8 h-8" />
+            <h2 className="text-3xl font-semibold text-red-700">Leadership & Impact</h2>
           </div>
-          <p>
+          <p className="text-gray-700 leading-relaxed text-lg">
             Led teams including peers with similar or greater experience, handled midnight regression runs, mentored juniors, and streamlined automation processes for banking applications across multiple modules like Business, Cards, and Issuer Configurations.
           </p>
         </div>
 
-        <div className="bg-white shadow rounded-2xl p-6">
-          <div className="flex items-center gap-4 mb-4">
-            <Youtube className="text-yellow-500" />
-            <h2 className="text-2xl font-semibold">YouTube & Creative Side</h2>
+        {/* YouTube & Creative Side */}
+        <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between">
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <Youtube className="text-yellow-600 w-8 h-8" />
+              <h2 className="text-3xl font-semibold text-yellow-700">YouTube & Creative Side</h2>
+            </div>
+            <p className="text-gray-700 leading-relaxed text-lg mb-6">
+              Outside the tech world, I run a horror-themed YouTube channel where I craft and narrate eerie, spine-chilling tales that blend traditional fear with modern twists.
+            </p>
           </div>
-          <p>
-            Outside the tech world, I run a horror-themed YouTube channel where I craft and narrate eerie, spine-chilling tales that blend traditional fear with modern twists.
-          </p>
           <a
-            href="https://www.youtube.com/@YourChannelName" // Replace with your actual channel
+            href="https://www.youtube.com/@YourChannelName" // Replace with your actual channel URL
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 px-4 py-2 border border-gray-700 text-gray-700 rounded hover:bg-gray-200"
+            className="inline-block text-center bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-xl px-6 py-3 shadow-lg transition-colors"
           >
             Visit Channel
           </a>
         </div>
       </section>
 
-      <footer className="mt-12 text-center text-gray-500">
+      <footer className="mt-20 text-center text-gray-600 font-light">
         <p>&copy; {new Date().getFullYear()} Loki S — QA Lead & Storyteller</p>
       </footer>
     </div>
