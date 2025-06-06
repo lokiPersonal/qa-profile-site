@@ -1,5 +1,5 @@
 import React from "react";
-import { Briefcase, Youtube, Code, Rocket } from "lucide-react";
+import { Briefcase, Code, Rocket, Linkedin } from "lucide-react";
 
 export default function QAProfileWebsite() {
   return (
@@ -9,15 +9,15 @@ export default function QAProfileWebsite() {
           Lokesh Sadagopan
         </h1>
         <p className="text-xl text-gray-700 italic">
-          QA Lead | Automation Expert | Building Teams
+          QA Lead | Automation | Building Teams | AI Testing
         </p>
       </header>
 
       <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Professional Summary */}
         <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
-          <h2 className="text-3xl font-semibold text-indigo-700 flex items-center gap-2 mb-6">
-            <Briefcase className="text-indigo-600 w-7 h-7" />
+          <h2 className="text-3xl font-semibold text-indigo-700 flex items-center gap-3 mb-6">
+            <Briefcase className="text-indigo-600 w-8 h-8" />
             Professional Summary
           </h2>
           <p className="text-gray-700 leading-relaxed text-lg">
@@ -27,8 +27,8 @@ export default function QAProfileWebsite() {
 
         {/* Tech Stack */}
         <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
-          <h2 className="text-3xl font-semibold text-green-700 flex items-center gap-2 mb-6">
-            <Code className="text-green-600 w-7 h-7" />
+          <h2 className="text-3xl font-semibold text-green-700 flex items-center gap-3 mb-6">
+            <Code className="text-green-600 w-8 h-8" />
             Tech Stack
           </h2>
           <ul className="list-disc list-inside text-gray-700 text-lg space-y-2">
@@ -43,8 +43,8 @@ export default function QAProfileWebsite() {
 
         {/* Leadership & Impact */}
         <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
-          <h2 className="text-3xl font-semibold text-red-700 flex items-center gap-2 mb-6">
-            <Rocket className="text-red-600 w-7 h-7" />
+          <h2 className="text-3xl font-semibold text-red-700 flex items-center gap-3 mb-6">
+            <Rocket className="text-red-600 w-8 h-8" />
             Leadership & Impact
           </h2>
           <p className="text-gray-700 leading-relaxed text-lg">
@@ -52,30 +52,30 @@ export default function QAProfileWebsite() {
           </p>
         </div>
 
-        {/* YouTube & Creative Side */}
+        {/* Social Media */}
         <div className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between">
           <div>
-            <h2 className="text-3xl font-semibold text-yellow-700 flex items-center gap-2 mb-6">
-              <Youtube className="text-yellow-600 w-7 h-7" />
-              YouTube & Creative Side
+            <h2 className="text-3xl font-semibold text-blue-700 flex items-center gap-3 mb-6">
+              <Linkedin className="text-blue-600 w-8 h-8" />
+              Social Media
             </h2>
             <p className="text-gray-700 leading-relaxed text-lg mb-6">
-              Outside the tech world, I run a horror-themed YouTube channel where I craft and narrate eerie, spine-chilling tales that blend traditional fear with modern twists.
+              I enjoy connecting with professionals, sharing knowledge, and staying up to date with the latest in test automation, team leadership, and innovation through platforms like LinkedIn.
             </p>
           </div>
           <a
-            href="https://www.youtube.com/@YourChannelName" // Replace this URL with your real channel
+            href="https://www.linkedin.com/in/lokesh-sadagopan-b66233126"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-center bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-xl px-6 py-3 shadow-lg transition-colors"
+            className="inline-block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl px-6 py-3 shadow-lg transition-colors"
           >
-            Visit Channel
+            Visit LinkedIn
           </a>
         </div>
       </section>
 
       <footer className="mt-20 text-center text-gray-600 font-light">
-        <p>&copy; {new Date().getFullYear()} Loki S — QA Lead & Storyteller</p>
+        <p>&copy; {new Date().getFullYear()} Lokesh Sadagopan — QA and Automation</p>
       </footer>
     </div>
   );
